@@ -38,6 +38,7 @@ If you want to submit a feature request and you are absolutely 100% sure that th
 - [ ] `!page [enable/disable]`: Enables/disables the `!page` command.
 
 ### General commands
+- [ ] `!meritRole list <game*> <category>`: Returns a list of merit roles and their required times for the category. If no category is specified it will return a list of all the merit roles for the game, their categories and their required times. If there are no merit roles setup on the server this command is disabled.
 - [ ] `!wr <game*> <category> <variables...>`: Gets the world record for the specified category.
 - [ ] `!wr <game*> <category> <level> <variables...>`: Gets the the specified category's world record for the specified level. 
 - [ ] `!pb <game*> <SRC username> <category> <variables...>`: Gets the SRC user's current PB in the specified category. 

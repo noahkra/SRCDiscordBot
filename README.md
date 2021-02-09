@@ -58,6 +58,7 @@ This will all get moved to the [wiki](https://github.com/noahkra/SRCDiscordBot/w
 - Subcategories are also specified in the `<variables...>` parameter. Please use the `!variables` command if you are unsure what these subcategories are called.
 - The "Any" value will be used for a variable if a category/level used in a command (like `!wr`, `!pb` etc.) has this variable and it was not specified in the command's variable parameter, unless otherwise set up using the `!variables default` command.
 - Use `00:00:00.000` as the argument for the `!meritRole` time parameter to add a merit role for having any run on the leaderboards, no matter the time.
+- Runs on the SRC leaderboards are only checked every 10 minutes for new entries, to avoid spamming the SRC API.
 - The bot does not set up roles and channels, it will only refer to them. These have to be added manually by your server's admins.
 - Abbreviations such as "default", "remove", "series", "game" etc. that could cause confusion to the user or the bot are not allowed to be added via either the `!abbrev` command or by manually editing the community settings file.
 - By default all general commands are enabled, and need to disabled manually if preferred.

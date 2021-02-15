@@ -14,10 +14,10 @@ For a full list of features and commands, please check out the [wiki](https://gi
 If you want to submit a feature request and you are absolutely 100% sure that the feature isn't already implemented or in the planned features list, you can do so [here](https://github.com/noahkra/SRCDiscordBot/issues/new?assignees=noahkra&labels=enhancement&template=feature-request.md&title=).
 
 #### Admin only commands
-- [ ] `!link game <game> <specify>`: Link an SRC game or series for the bot to look up times from. If the bot finds multiple matches you will given a list and be asked to specify which one you meant exactly.
-- [ ] `!link series <series> <specify>`: Link an SRC game series for the bot to look up times from. When linking a series, the `<game*>` parameter will have to be specified in commands like `!wr`, `!pb` etc. If the bot finds multiple matches you will given a list and be asked to specify which one you meant exactly.
-- [ ] `!abbrev <abbreviation> <full game/level/category name>`: Abbreviate a game, level or category name to use in commands like `!wr`, `!pb` etc.
-- [ ] `!abbrev <abbreviation> <variable=value>`: Abbreviate an SRC variable to use in commands like `!wr`, `!pb` etc.
+- [x] `!link game <game>`: Link an SRC game or series for the bot to look up times from.
+- [x] `!link series <series>`: Link an SRC game series for the bot to look up times from. When linking a series, the `<game*>` parameter will have to be specified in commands like `!wr`, `!pb` etc.
+- [x] `!abbrev <abbreviation> <full game/level/category name>`: Abbreviate a game, level or category name to use in commands like `!wr`, `!pb` etc.
+- [x] `!abbrev <abbreviation> <variable=value>`: Abbreviate an SRC variable to use in commands like `!wr`, `!pb` etc.
 - [ ] `!abbrev remove <abbreviation>`: Removes the specified abbreviation.
 - [ ] `!meritRole <game*> <category> <@discord role mention> <hh:mm:ss.ms> [IGT/RTA]`: Sets up automatic assignment of merit roles in the discord server. If players get a new PB in the specified category and this pb is better than the specified time in the specified timing method, the bot will automatically assign the specified discord role to this user and remove the previous merit role for the specified timing method (as sorted by time). For this to work the user needs to have their discord account linked on SRC. Running this command without any arguments will return the amount of people that currently have a merit role on the server.
 - [ ] `!meritRole remove <game*> <category> <@discord role mention>`: Removes the specified merit role for the specified category.
@@ -32,21 +32,21 @@ If you want to submit a feature request and you are absolutely 100% sure that th
 - [ ] `!variables default <variable> <default value>`: Sets the default value that is used when the specified variable is available for a category, but not used as an argument in the argument. This is particularly useful to set a 'main' subcategory. By default this value is "Any". Abbreviations can not be used in this command.
 - [ ] `!messageStyle general <style code> <R> <G> <B>`: Allows customisation of which style of message the bot will use to reply to general commands. See the [wiki](https://github.com/noahkra/SRCDiscordBot/wiki) for a list of styles. If a style uses embedding and the `<R>`, `<G>` and `<B>` variables aren't specified or don't fall in the 0-255 range, the bot will use the users role-colour.
 - [ ] `!messageStyle announceWR <style code> <R> <G> <B>`: Allows customisation of which style of message the bot will use to announce new WRs. See the [wiki](https://github.com/noahkra/SRCDiscordBot/wiki) for a list of styles. If a style uses embedding and the `<R>`, `<G>` and `<B>` variables aren't specified or don't fall in the 0-255 range, the bot will use a gold colour.
-- [ ] `!prefix <prefix number>`: Allows replacement of the `!` prefix of the bot's commands to ensure compatibility with other bots. The list of prefixes are at the bottom of this readme, but will be moved to the [wiki](https://github.com/noahkra/SRCDiscordBot/wiki) in the future.
-- [ ] `!wr [enable/disable]`: Enables/disables the `!wr` command.
+- [x] `!prefix <prefix number>`: Allows replacement of the `!` prefix of the bot's commands to ensure compatibility with other bots. The list of prefixes are at the bottom of this readme, but will be moved to the [wiki](https://github.com/noahkra/SRCDiscordBot/wiki) in the future.
+- [x] `!wr [enable/disable]`: Enables/disables the `!wr` command.
 - [ ] `!pb [enable/disable]`: Enables/disables the `!pb` command.
-- [ ] `!page [enable/disable]`: Enables/disables the `!page` command.
+- [x] `!page [enable/disable]`: Enables/disables the `!page` command.
 
 ### General commands
 - [ ] `!meritRole list <game*> <category>`: Returns a list of merit roles and their required times for the category. If no category is specified it will return a list of all the merit roles for the game, their categories and their required times. If there are no merit roles setup on the server this command is disabled.
-- [ ] `!wr <game*> <category> <variables...>`: Gets the world record for the specified category.
-- [ ] `!wr <game*> <category> <level> <variables...>`: Gets the the specified category's world record for the specified level. 
+- [x] `!wr <game*> <category> <variables...>`: Gets the world record for the specified category.
+- [x] `!wr <game*> <category> <level> <variables...>`: Gets the the specified category's world record for the specified level. 
 - [ ] `!pb <game*> <SRC username> <category> <variables...>`: Gets the SRC user's current PB in the specified category. 
 - [ ] `!pb <game*> <SRC username> <category> <level> <variables...>`: Gets the SRC user's current PB in the specified category for the specified level. 
-- [ ] `!page <game*> <category> <level>`: Posts a link to the specified category, or the specified level for that category if the level parameter is specified. Sadly SRC does not allow for direct linking to subcategories or filtered leaderboards. If no variable (or in the case of series, only the game) is specified, the bot will post a link to the main leaderboard page.
+- [x] `!page <game*> <category> <level>`: Posts a link to the specified category, or the specified level for that category if the level parameter is specified. Sadly SRC does not allow for direct linking to subcategories or filtered leaderboards. If no variable (or in the case of series, only the game) is specified, the bot will post a link to the main leaderboard page.
 
 ### About commands
-- [ ] `!about`: Posts a link to this page.
+- [x] `!about`: Posts a link to this page.
 - [ ] `!donate`: Posts a link where you can donate to support this bot and it's maintainer!
 - [ ] `!help`, `!wiki` or `!commands`: Posts a link to the [wiki](https://github.com/noahkra/SRCDiscordBot/wiki).
 
@@ -58,13 +58,13 @@ This will all get moved to the [wiki](https://github.com/noahkra/SRCDiscordBot/w
 - The `<variables...>` parameter is an optional parameter that allows for multiple variable arguments to be entered, in either full or abbreviated form, seperated by spaces.
 - Subcategories are also specified in the `<variables...>` parameter. Please use the `!variables` command if you are unsure what these subcategories are called.
 - The "Any" value will be used for a variable if a category/level used in a command (like `!wr`, `!pb` etc.) has this variable and it was not specified in the command's variable parameter, unless otherwise set up using the `!variables default` command.
-- Use `00:00:00.000` as the argument for the `!meritRole` time parameter to add a merit role for having any run on the leaderboards, no matter the time.
-- Runs on the SRC leaderboards are only checked every 10 minutes for new entries, to avoid spamming the SRC API. This means merit roles and wr announcements are also only done updated 10 minutes.
-- The bot does not set up roles and channels, it will only refer to them. These have to be added manually by your server's admins.
-- Abbreviations such as "default", "remove", "series", "game" etc. that could cause confusion to the user or the bot are not allowed to be added via either the `!abbrev` command or by manually editing the community settings file.
+- Use `0.000` as the argument for the `!meritRole` time parameter to add a merit role for having any run on the leaderboards, no matter the time.
+- Runs on the SRC leaderboards are only checked every 10 minutes for new entries, to avoid spamming the SRC API. This means merit roles and wr announcements are also only updated 10 minutes.
+- The bot does not set up roles and channels, it will only refer to them. Roles and channels have to be added manually by your server's admins.
+- Abbreviations such as "default", "remove", "series", "game" or any game/level/category/variable name etc. that could cause confusion to the user or the bot are not allowed to be added via either the `!abbrev` command or by manually editing the community settings file.
 - By default all general commands are enabled, and need to disabled manually if preferred.
-- Commands will return an error if the specified abbreviation, merit role combination or wr announcement combination has already been setup. Use the `remove` argumented version of the command to remove them first and then add them anew. Alternatively to bypass this error, append `-overwrite` to the back of the command.
-- Commands will return an error if the specified discord role or channel, SRC username, game, series, category, level, or variables can't be found in the bots database. If you are sure they do exist, use `!refresh` to refresh SRC IDs or check the spelling of the provided arguments.
+- Commands will return an error if the specified abbreviation, merit role combination or wr announcement combination has already been setup. Use the `remove` argumented version of the command to remove them first and then add them anew. Alternatively to bypass this, append `-overwrite` to the back of the command.
+- Commands will return an error if the specified discord role or channel, SRC username, game, series, category, level, or variables can't be found in the bot's database. If you are sure they do exist, use `!refresh` to refresh SRC IDs or check the spelling of the provided arguments.
 - It is *HIGHLY* recommended to export your settings after having spent time setting the bot up, just in case something goes wrong or the bot gets accidentally removed.
 - For security reasons you will have to remove and re-add the bot to the server in order to change the linked game or series.
 - Removing the bot from the server will delete all the community settings. You can export these using `!exportSettings` before removal to import them later on using `!importSettings`.

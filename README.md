@@ -41,14 +41,14 @@ If you want to submit a feature request and you are absolutely 100% sure that th
 - [ ] `!meritRole list <game*> <category>`: Returns a list of merit roles and their required times for the category. If no category is specified it will return a list of all the merit roles for the game, their categories and their required times. If there are no merit roles setup on the server this command is disabled.
 - [x] `!wr <game*> <category> <variables...>`: Gets the world record for the specified category.
 - [x] `!wr <game*> <category> <level> <variables...>`: Gets the the specified category's world record for the specified level. 
-- [ ] `!pb <game*> <SRC username> <category> <variables...>`: Gets the SRC user's current PB in the specified category. 
-- [ ] `!pb <game*> <SRC username> <category> <level> <variables...>`: Gets the SRC user's current PB in the specified category for the specified level. 
+- [x] `!pb <game*> <SRC username> <category> <variables...>`: Gets the SRC user's current PB in the specified category. 
+- [x] `!pb <game*> <SRC username> <category> <level> <variables...>`: Gets the SRC user's current PB in the specified category for the specified level. 
 - [x] `!page <game*> <category> <level>`: Posts a link to the specified category, or the specified level for that category if the level parameter is specified. Sadly SRC does not allow for direct linking to subcategories or filtered leaderboards. If no variable (or in the case of series, only the game) is specified, the bot will post a link to the main leaderboard page.
 
 ### About commands
 - [x] `!about`: Posts a link to this page.
 - [ ] `!donate`: Posts a link where you can donate to support this bot and it's maintainer!
-- [ ] `!help`, `!wiki` or `!commands`: Posts a link to the [wiki](https://github.com/noahkra/SRCDiscordBot/wiki).
+- [x] `!help`, `!wiki` or `!commands`: Posts a link to the [wiki](https://github.com/noahkra/SRCDiscordBot/wiki).
 
 ### Notes about commands:
 This will all get moved to the [wiki](https://github.com/noahkra/SRCDiscordBot/wiki) eventually.

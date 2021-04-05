@@ -85,3 +85,6 @@ This will all get moved to the [wiki](https://github.com/noahkra/SRCDiscordBot/w
 &nbsp;
 
 [wiki](https://github.com/noahkra/SRCDiscordBot/wiki)
+
+## Join the discord server
+[![discord invite](https://discordapp.com/api/guilds/828562417256235018/widget.png?style=banner2)](https://discord.gg/nwb62YbSMH)
